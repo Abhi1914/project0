@@ -1,0 +1,71 @@
+.container, img{
+	position: relative;
+	text-align: center;
+	color: white;
+    width: 100%;
+    height: 100%;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  right: 16px;
+}
+p {
+	font-family: 'Roboto', sans-serif;
+}
+.endurance, .formulaone, .rally {
+	position: relative;
+	width: 100%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.endurance:hover .image {
+  opacity: 0.3;
+}
+
+.endurance:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #9fd1a0;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.formulaone:hover .image {
+  opacity: 0.3;
+}
+
+.formulaone:hover .middle {
+  opacity: 1;
+}
+
+.rally:hover .image {
+  opacity: 0.3;
+}
+
+.rally:hover .middle {
+  opacity: 1;
+}
